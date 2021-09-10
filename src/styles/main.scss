@@ -1,3 +1,19 @@
+@import "reset";
+@import "table";
+@import "manipulation";
+
+*, {
+  box-sizing: border-box;
+}
 body{
-  background: yellow;
+  background: #fff;
+}
+
+.game {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
 }

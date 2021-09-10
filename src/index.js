@@ -1,5 +1,5 @@
 import "./styles/main.scss";
-import {asd} from "./test.js";
+import {Game} from "./structures/Game.js";
+import {Player} from "./structures/Player.js";
 
-console.log(asd)
-console.log("sosi")
+const newGame = new Game([new Player("Danil"), new Player("Yan"), new Player("Sergei")]);
