@@ -3,8 +3,11 @@
 
   .manipulation__deck {
     cursor: pointer;
-
+    background-color: inherit;
+    border: none;
     margin-bottom: 40px;
+    padding: 0;
+
     .deck-icon{
       width: 100%;
       height: auto;
@@ -18,13 +21,12 @@
       border-radius: 5px;
       padding: 10px 0;
       color: #000;
+      transition: 0.3s;
 
-
-      transition: 0.3s ;
-    }
-    .manipulation__btn:hover {
-      color: #fff;
-      background-color: #000;
+      &:hover {
+        color: #fff;
+        background-color: #000;
+      }
     }
   }
 }

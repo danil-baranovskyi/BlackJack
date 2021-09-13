@@ -1,7 +1,7 @@
 export class Card {
-    constructor(icon, suit, nominal) {
+    constructor(icon, nominal, src) {
         this.icon = icon;
-        this.suit = suit;
         this.nominal = nominal;
+        this.src = src;
     }
 }

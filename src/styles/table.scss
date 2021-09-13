@@ -17,6 +17,7 @@
   margin-bottom: 50px;
   padding-left: 15px;
   padding-bottom: 15px;
+
   &__name {
     font-size: 24px;
   }
@@ -25,21 +26,56 @@
     display: flex;
     flex-wrap: wrap;
   }
+
   &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 900;
+    border-radius: 15px;
+    border: 3px solid #000;
     width: 100px;
     height: 130px;
     background-color: #fff;
     margin-right: 15px;
     margin-bottom: 15px;
+    padding: 10px;
+    position: relative;
+
+    .card__icon-wrapper {
+      position: absolute;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+
+      .card__icon {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .card__value-up {
+      text-align: start;
+    }
+
+    .card__value-down {
+      text-align: end;
+    }
   }
+
   &__score-container {
     text-align: center;
   }
+
   &__score {
     font-size: 24px;
   }
-
 }
+
+
+
 
 .player--active {
   background-color: green;
